@@ -1,8 +1,10 @@
 import { html, css, LitElement, property } from 'lit-element';
-
-import '@material/mwc-button'
-import '@material/mwc-list/mwc-list.js';
-import '@material/mwc-list/mwc-list-item.js';
+import "@ui5/webcomponents-icons/dist/upload.js";
+import "@ui5/webcomponents/dist/Button";
+import "@ui5/webcomponents/dist/FileUploader.js";
+import "@ui5/webcomponents/dist/List.js";
+import "@ui5/webcomponents/dist/Card";
+import "@ui5/webcomponents/dist/StandardListItem.js";
 
 export class MyElement extends LitElement {
   static styles = css`
@@ -24,15 +26,22 @@ export class MyElement extends LitElement {
   render() {
     return html`
       <h2>${this.title} Nr. ${this.counter}!</h2>
-      
-      <mwc-button @click=${this.__increment}>increment</mwc-button>
+      <button @click=${this.__increment}>increment</button>
 
-      <mwc-list>
-        <mwc-list-item>Item 0</mwc-list-item>
-        <mwc-list-item>Item 1</mwc-list-item>
-        <mwc-list-item>Item 2</mwc-list-item>
-        <mwc-list-item>Item 3</mwc-list-item>
-      </mwc-list>
+      <ui5-file-uploader hide-input>
+        <ui5-button icon="upload">Upload</ui5-button>
+      </ui5-file-uploader>
+
+      <ui5-card avatar="group" heading="Team Space" subheading="Direct Reports" status="3 of 10" class="medium">
+        <div class="card-content">
+          <ui5-list separators="None" class="card-content-child" style="width: 100%">
+            <ui5-li image="../../../assets/images/avatars/man_avatar_1.png" description="User Researcher">Alain Chevalier</ui5-li>
+            <ui5-li image="../../../assets/images/avatars/woman_avatar_1.png" description="Artist">Monique Legrand</ui5-li>
+            <ui5-li image="../../../assets/images/avatars/woman_avatar_2.png" description="UX Specialist">Michael Adams</ui5-li>
+          </ui5-list>
+
+        </div>
+      </ui5-card>
     `;
   }
 }
