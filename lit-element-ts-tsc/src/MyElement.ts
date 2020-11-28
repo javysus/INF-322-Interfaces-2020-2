@@ -8,11 +8,17 @@ import "@ui5/webcomponents/dist/StandardListItem.js";
 
 export class MyElement extends LitElement {
   static styles = css`
-    :host {
-      display: block;
-      padding: 25px;
-      color: var(--my-element-text-color, #000);
-    }
+  .card-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #grupos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   `;
 
   @property({ type: String }) title = 'Hey there';
@@ -22,26 +28,74 @@ export class MyElement extends LitElement {
   __increment() {
     this.counter += 1;
   }
-
+/*<h2>${this.title} Nr. ${this.counter}!</h2>
+<button @click=${this.__increment}>increment</button>*/
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
 
-      <ui5-file-uploader hide-input>
-        <ui5-button icon="upload">Upload</ui5-button>
-      </ui5-file-uploader>
-
-      <ui5-card avatar="group" heading="Team Space" subheading="Direct Reports" status="3 of 10" class="medium">
+      <div id="grupos">
+      <ui5-card avatar="group" heading="Grupo 1" subheading="Direct Reports" class="small"
+        style="width:260px; margin: 10px;">
         <div class="card-content">
           <ui5-list separators="None" class="card-content-child" style="width: 100%">
-            <ui5-li image="../../../assets/images/avatars/man_avatar_1.png" description="User Researcher">Alain Chevalier</ui5-li>
-            <ui5-li image="../../../assets/images/avatars/woman_avatar_1.png" description="Artist">Monique Legrand</ui5-li>
-            <ui5-li image="../../../assets/images/avatars/woman_avatar_2.png" description="UX Specialist">Michael Adams</ui5-li>
+            <ui5-li>Alain Chevalier</ui5-li>
+            <ui5-li>Monique Legrand</ui5-li>
+            <ui5-li>Michael Adams</ui5-li>
+            <ui5-li>María Adams</ui5-li>
           </ui5-list>
 
         </div>
       </ui5-card>
+
+      <ui5-card avatar="group" heading="Grupo 2" subheading="Direct Reports" class="small"
+        style="width:260px; margin: 10px;">
+        <div class="card-content">
+          <ui5-list separators="None" class="card-content-child" style="width: 100%">
+            <ui5-li info="Avanzado" info-state="Success">Alain Chevalier</ui5-li>
+            <ui5-li >Monique Legrand</ui5-li>
+            <ui5-li >Michael Adams</ui5-li>
+          </ui5-list>
+
+        </div>
+      </ui5-card>
+
+      <ui5-card avatar="group" heading="Grupo 3" subheading="Direct Reports" class="small"
+        style="width:260px; margin: 10px;">
+        <div class="card-content">
+          <ui5-list separators="None" class="card-content-child" style="width: 100%">
+            <ui5-li info="Avanzado" info-state="Success">Alain Chevalier</ui5-li>
+            <ui5-li >Monique Legrand</ui5-li>
+            <ui5-li >Michael Adams</ui5-li>
+          </ui5-list>
+
+        </div>
+      </ui5-card>
+
+      <ui5-card avatar="group" heading="Grupo 4" subheading="Direct Reports" class="small"
+        style="width:260px; margin: 10px;">
+        <div class="card-content">
+          <ui5-list separators="None" class="card-content-child" style="width: 100%">
+            <ui5-li info="Avanzado" info-state="Success">Alain Chevalier</ui5-li>
+            <ui5-li >Monique Legrand</ui5-li>
+            <ui5-li >Michael Adams</ui5-li>
+          </ui5-list>
+
+        </div>
+      </ui5-card>
+
+      <ui5-card avatar="group" heading="Grupo 5" subheading="Direct Reports" class="small"
+        style="width:260px; margin: 10px;">
+        <div class="card-content">
+          <ui5-list separators="None" class="card-content-child" style="width: 100%">
+            <ui5-li info="Avanzado" info-state="Success">Alain Chevalier</ui5-li>
+            <ui5-li >Monique Legrand</ui5-li>
+            <ui5-li >Michael Adams</ui5-li>
+          </ui5-list>
+
+        </div>
+      </ui5-card>
+
+      </div>
     `;
   }
 }
