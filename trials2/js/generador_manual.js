@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    var alumnos = 1;
     var alumno = 1;
 
     $('#add').click(function(){
@@ -13,10 +14,11 @@ $(document).ready(function(){
         console.log(tabla);
 
         $("#tableBody").append('<tr id=dato'+alumno+'><th scope="row" id=n'+alumno+'>'
-        +alumno+'</th><td>'+nombre+'</td><td>'+apellido+'</td><td>'+genero+'</td><td>'+nivel+'</td><td><button id='+
+        +alumnos+'</th><td>'+nombre+'</td><td>'+apellido+'</td><td>'+genero+'</td><td>'+nivel+'</td><td><button id='+
         alumno+' type="button" class="btn btn-danger btn-sm">X</button></td></tr>');
 
         alumno++;
+        alumnos++;
 
         document.getElementById("nombre").value = "";
         document.getElementById("apellido").value = "";
@@ -24,15 +26,13 @@ $(document).ready(function(){
         $('#'+idAlumno).click(function(){
 
             document.getElementById('dato'+idAlumno).innerHTML = "";
-    
-            console.log('id alumno'+idAlumno);
-            console.log(alumno);
+            alumnos--;
+            
             var i = idAlumno+1;
-            console.log(i);
             for(; i < alumno; i++){
-                console.log("Hola "+i);
-                document.getElementById("n"+i).innerHTML = i-1;
+                document.getElementById("n"+i).innerHTML = parseInt(document.getElementById("n"+i).innerHTML)-1;
             }
+            
         })
     
     })
