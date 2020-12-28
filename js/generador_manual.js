@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var alumnosv = 1;
+    var alumnos = 1;
     var alumno = 1;
 
     $('#add').click(function(){
