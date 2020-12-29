@@ -66,6 +66,28 @@
 
       <button type="button" class="btn btn-indigo btn-sm m-0" onclick="window.location.href='upload_1.html';">Subir Archivo</button>
       
+      <div class="input-group">
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        <button class="btn btn-indigo" type="button" id="enviarArchivo" data-bs-toggle="modal" data-bs-target="#subirArchivo">Enviar</button>
+      </div>
+
+      <div class="modal fade" tabindex="-1" id="subirArchivo">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Archivo subido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Su archivo fue cargado correctamente.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" onclick="window.location.href='generador_1.html';">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div class="row">
           <div class="col-sm-3">
             
