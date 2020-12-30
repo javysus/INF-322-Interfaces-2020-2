@@ -51,10 +51,6 @@
                 <a class="nav-link" href="generador_home.html">Crear Grupos
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cursos.html">Mis cursos
-                </a>
-              </li>
             </ul>
             <!-- Links -->
       
@@ -96,16 +92,182 @@
       </div>  
     </div>
 
-     
+    <ul class="nav nav-tabs justify-content-evenly" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="profile-tab" data-bs-toggle="tab" href="#normal" role="tab" aria-controls="profile" aria-selected="true">NORMAL</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#tabla" role="tab" aria-controls="home" aria-selected="false">LISTA</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade" id="tabla" role="tabpanel" aria-labelledby="home-tab">
+        <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Género</th>
+            <th scope="col">Conocimiento</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <th scope="row">1</th>
+            <td id="nombreLista1">Diego</td>
+            <td id="apellido1">Briones</td>
+            <td>Masculino</td>
+            <td>Avanzado</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar1" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+          
+          <tr>
+            <th scope="row">1</th>
+            <td id="nombreLista2">Victoria</td>
+            <td id="apellido2">Cofré</td>
+            <td>Femenino</td>
+            <td>Intermedio</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar2" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+            </svg></a></td>
+          </tr>
+  
+          <tr>
+            <th scope="row">1</th>
+            <td id="nombreLista3">Josefa</td>
+            <td id="apellido3">Soto</td>
+            <td>Femenino</td>
+            <td>Intermedio</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar3" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr>
+            <th scope="row">1</th>
+            <td id="nombreLista4">Natalia</td>
+            <td id="apellido4">Rojas</td>
+            <td>Femenino</td>
+            <td>Principiante</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr class="table-active">
+            <th scope="row">2</th>
+            <td id="nombreLista5">José</td>
+            <td id="apellido5">Rojas</td>
+            <td>Masculino</td>
+            <td>Avanzado</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar5" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr class="table-active">
+            <th scope="row">2</th>
+            <td id="nombreLista6">Pedro</td>
+            <td id="apellido6">Mérida</td>
+            <td>Masculino</td>
+            <td>Intermedio</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr class="table-active">
+            <th scope="row">2</th>
+            <td id="nombreLista7">Nicolás</td>
+            <td id="apellido7">Castillo</td>
+            <td>Masculino</td>
+            <td>Intermedio</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr class="table-active">
+            <th scope="row">2</th>
+            <td id="nombreLista8">Alberto</td>
+            <td id="apellido8">Carruido</td>
+            <td>Masculino</td>
+            <td>Principiante</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar8" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr>
+            <th scope="row">3</th>
+            <td id="nombreLista9">Rocío</td>
+            <td id="apellido9">Fuentes</td>
+            <td>Femenino</td>
+            <td>Avanzado</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr>
+            <th scope="row">3</th>
+            <td id="nombreLista10">Paula</td>
+            <td id="apellido10">Aracena</td>
+            <td>Femenino</td>
+            <td>Intermedio</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar10" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr>
+            <th scope="row">3</th>
+            <td id="nombreLista11">Laura</td>
+            <td id="apellido11">Flores</td>
+            <td>Femenino</td>
+            <td>Intermedio</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar11" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+          <tr>
+            <th scope="row">3</th>
+            <td id="nombreLista12">Tomás</td>
+            <td id="apellido12">Cortez</td>
+            <td>Masculino</td>
+            <td>Principiante</td>
+            <td><a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar12" title="Intercambiar" href="#">
+              <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg></a></td>
+          </tr>
+  
+        </tbody>
+      </table></div>
 
-      <div class="d-flex flex-wrap flex-row justify-content-evenly">
+      <div class="tab-pane fade show active" id="normal" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="d-flex flex-wrap flex-row justify-content-evenly">
           <div class="col-sm-3">
             <div class="card">
               <div class="card-body">
   
                 <h5 class="card-title ">Grupo 1</h5>
-              
-             
                 <ul class="list-group list-group-flush">
                   
                   <div class="list-group-item list-group-item-action">
@@ -152,7 +314,7 @@
                       <li class="list-group" id="nombre4">Natalia Rojas</li>
                       <div class="d-flex justify-content-end">
                         <small class="text-orange mr-3">Principiante</small>
-                        <a class="badge bg-light text-dark"  data-bs-toggle="modal" data-bs-target="#intercambiar4" title="Intercambiar" href="#">
+                        <a class="badge bg-light text-dark"  data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
                         </svg></a>
@@ -188,7 +350,7 @@
                       <li class="list-group" id="nombre6">Pedro Mérida</li>
                       <div class="d-flex justify-content-end">
                         <small class="text-yellow mr-3">Intermedio</small>
-                        <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar6" title="Intercambiar" href="#">
+                        <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
                         </svg></a>
@@ -201,7 +363,7 @@
                       <li class="list-group" id="nombre7">Nicolás Castillo</li>
                       <div class="d-flex justify-content-end">
                         <small class="text-yellow mr-3">Intermedio</small>
-                        <a class="badge bg-light text-dark"  data-bs-toggle="modal" data-bs-target="#intercambiar7" title="Intercambiar" href="#">
+                        <a class="badge bg-light text-dark"  data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
                         </svg></a>
@@ -237,7 +399,7 @@
                       <li class="list-group" id="nombre9">Rocío Fuentes</li>
                       <div class="d-flex justify-content-end">
                         <small class="text-success mr-3">Avanzado</small>
-                        <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar9" title="Intercambiar" href="#">
+                        <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
                         </svg></a>
@@ -284,181 +446,202 @@
                     </div>
                   </div>
                 </ul>
+
               </div>
             </div>
           </div>
+      </div>
+    </div>
 
-            <div class="modal fade" tabindex="-1" id="intercambiar1">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Intercambiar alumno</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Alumnos disponibles para intercambiar</p>
-                    <select class="form-select" aria-label="Default select example" id="cambiar1">
-                      <option value="5">José Rojas</option>
-                    </select>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="1">Aceptar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" tabindex="-1" id="intercambiar1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Alumnos disponibles para intercambiar</p>
+            <select class="form-select" aria-label="Default select example" id="cambiar1">
+              <option value="5">José Rojas</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="1">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="modal fade" tabindex="-1" id="intercambiar2">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Intercambiar alumno</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Alumnos disponibles para intercambiar</p>
-                    <select class="form-select" aria-label="Default select example" id="cambiar2">
-                      <option value="10">Paula Aracena</option>
-                      <option value="11">Laura Flores</option>
-                    </select>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="2">Aceptar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" tabindex="-1" id="intercambiar2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Alumnos disponibles para intercambiar</p>
+            <select class="form-select" aria-label="Default select example" id="cambiar2">
+              <option value="10">Paula Aracena</option>
+              <option value="11">Laura Flores</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="2">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="modal fade" tabindex="-1" id="intercambiar3">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Intercambiar alumno</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Alumnos disponibles para intercambiar</p>
-                    <select class="form-select" aria-label="Default select example" id="cambiar3">
-                      <option value="10">Paula Aracena</option>
-                      <option value="11">Laura Flores</option>
-                    </select>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="3">Aceptar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" tabindex="-1" id="intercambiar3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Alumnos disponibles para intercambiar</p>
+            <select class="form-select" aria-label="Default select example" id="cambiar3">
+              <option value="10">Paula Aracena</option>
+              <option value="11">Laura Flores</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="3">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="modal fade" tabindex="-1" id="intercambiar5">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Intercambiar alumno</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Alumnos disponibles para intercambiar</p>
-                    <select class="form-select" aria-label="Default select example" id="cambiar5">
-                      <option value="1">Diego Briones</option>
-                    </select>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="5">Aceptar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" tabindex="-1" id="intercambiar5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Alumnos disponibles para intercambiar</p>
+            <select class="form-select" aria-label="Default select example" id="cambiar5">
+              <option value="1">Diego Briones</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="5">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="modal fade" tabindex="-1" id="intercambiar8">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Intercambiar alumno</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Alumnos disponibles para intercambiar</p>
-                    <select class="form-select" aria-label="Default select example" id="cambiar8">
-                      <option value="12">Tomás Cortez</option>
-                    </select>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="8">Aceptar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" tabindex="-1" id="intercambiar8">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Alumnos disponibles para intercambiar</p>
+            <select class="form-select" aria-label="Default select example" id="cambiar8">
+              <option value="12">Tomás Cortez</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="8">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="modal fade" tabindex="-1" id="intercambiar10">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Intercambiar alumno</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Alumnos disponibles para intercambiar</p>
-                    <select class="form-select" aria-label="Default select example" id="cambiar10">
-                      <option value="2">Victoria Cofré</option>
-                      <option value="3">Josefa Soto</option>
-                    </select>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="10">Aceptar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" tabindex="-1" id="intercambiar10">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Alumnos disponibles para intercambiar</p>
+            <select class="form-select" aria-label="Default select example" id="cambiar10">
+              <option value="2">Victoria Cofré</option>
+              <option value="3">Josefa Soto</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="10">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="modal fade" tabindex="-1" id="intercambiar11">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Intercambiar alumno</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Alumnos disponibles para intercambiar</p>
-                    <select class="form-select" aria-label="Default select example" id="cambiar11">
-                      <option value="2">Victoria Cofré</option>
-                      <option value="3">Josefa Soto</option>
-                    </select>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="11">Aceptar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" tabindex="-1" id="intercambiar11">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Alumnos disponibles para intercambiar</p>
+            <select class="form-select" aria-label="Default select example" id="cambiar11">
+              <option value="2">Victoria Cofré</option>
+              <option value="3">Josefa Soto</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="11">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="modal fade" tabindex="-1" id="intercambiar12">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Intercambiar alumno</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Alumnos disponibles para intercambiar</p>
-                    <select class="form-select" aria-label="Default select example" id="cambiar12">
-                      <option value="8">Alberto Carruido</option>
-                    </select>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="12">Aceptar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade" tabindex="-1" id="intercambiar12">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Alumnos disponibles para intercambiar</p>
+            <select class="form-select" aria-label="Default select example" id="cambiar12">
+              <option value="8">Alberto Carruido</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" id="12">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="intercambiarfail">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Intercambiar alumno</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>No hay alumnos para intercambiar según las restricciones.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
 

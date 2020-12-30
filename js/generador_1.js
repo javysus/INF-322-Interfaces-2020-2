@@ -28,6 +28,11 @@ $(document).ready(function(){
         var nombreOriginal = document.getElementById("nombre"+alumnoId).textContent;
         console.log("Intercambiar "+ nombreOriginal);
 
+        //En lista
+        var nombreListaOriginal = document.getElementById("nombreLista"+alumnoId).textContent;
+        var apellidoOriginal = document.getElementById("apellido"+alumnoId).textContent;
+        //
+
         var alum = document.getElementById("cambiar"+alumnoId).value;
         var nombreAlumno = document.getElementById("nombre"+alum).textContent;
         console.log("Por " + nombreAlumno);
@@ -35,8 +40,17 @@ $(document).ready(function(){
         document.getElementById("nombre"+alumnoId).innerHTML = nombreAlumno;
         document.getElementById("nombre"+alum).innerHTML = nombreOriginal;
 
+        //En lista
+        var nombreAlumnoLista = document.getElementById("nombreLista"+alum).textContent;
+        var apellidoAlumno = document.getElementById("apellido"+alum).textContent;
+
+        document.getElementById("nombreLista"+alumnoId).innerHTML = nombreAlumnoLista;
+        document.getElementById("apellido"+alumnoId).innerHTML = apellidoAlumno;
+        document.getElementById("nombreLista"+alum).innerHTML = nombreListaOriginal;
+        document.getElementById("apellido"+alum).innerHTML = apellidoOriginal;
+
         $("footer").append('<div class="alert alert-success alert-dismissible fade show" role="alert">El intercambio se ha realizado satisfactoriamente.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
-        $(".alert").delay(2500).fadeOut(200, function() {
+        $(".alert").delay(3000).fadeOut(200, function() {
             $(this).alert('close');
         });
     })
