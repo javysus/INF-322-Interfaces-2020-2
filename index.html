@@ -7,8 +7,8 @@
 
 
     <link rel="stylesheet" href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css">
-
-    
+    <link rel="icon" href="logo.jpeg">
+  
 
 </head>
 
@@ -40,10 +40,6 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="generador_home.html">Crear Grupos
-              </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="cursos.html">Mis cursos
               </a>
             </li>
@@ -66,33 +62,67 @@
   <main>
 
       <div style="overflow:hidden;">
-      <img src="https://www.inf.utfsm.cl/images/slides/quienes-somos-1600x393.jpg" class="card-img-top" alt="" style="margin:-10% 0px -5% 0px;" />
-    </div>
+        <img src="https://www.inf.utfsm.cl/images/slides/quienes-somos-1600x393.jpg" class="card-img-top" alt="" style="margin:-10% 0px -5% 0px;" />
+      </div>
 
-      <h1 style="text-align: center">Escoja como gestionar la generación de equipos</h1>
+      <div class="row" style="margin-top: 30px; margin-right: 0px">
+        <h1 style="text-align: center; padding-right: 0px">Selecciona como generar los equipos</h1>
+      </div>
   
       <div class="card-group">
-        <div class="card justify-content-md-center" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title" style='text-align: center'>Generador automático</h5>
-            <p class="card-text" style='text-align: center'>Los grupos se generan a partir de una lista de alumnos global (en formato CSV). </p>
-            <div class="row justify-content-center">
-              <a onclick="window.location.href='generador_home.html';" class="btn btn-indigo btn-sm m-0" style="width: 100px">Entrar aqui</a>
+        <div class="card mb-3" style="margin-left: 30px; margin-top: 50px; max-width: 635px; height: 200px">
+          <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://www.logolynx.com/images/logolynx/8b/8b0daf4c2d9030d9cb0c492e267d0ddc.jpeg" alt="" style="height: 100px; width: auto; margin: 40px">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Generador automático</h5>
+                <p class="card-text">Los grupos se generan a partir de una lista de alumnos global (en formato CSV).</p>
+                <div class="input-group">
+                  <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                  <button class="btn btn-indigo" type="button" id="enviarArchivo" data-bs-toggle="modal" data-bs-target="#subirArchivo">Enviar</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card justify-content-md-center" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title" style='text-align: center'>Generador manual</h5>
-            <p class="card-text" style='text-align: center'>Los integrantes de los grupos se ingresan manualmente para luego ser agrupados.</p>
-            <div class="row justify-content-center">
-              <a onclick="window.location.href='generador_manual.html';" class="btn btn-indigo btn-sm m-0" style="width: 100px">Entrar aqui</a>
+      <div class="card mb-3" style="margin-left: 30px; margin-top: 50px; max-width: 635px; height: 200px">
+        <div class="row g-0">
+          <div class="col-md-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/VisualEditor_-_Icon_-_Bullet-list-ltr.svg/1200px-VisualEditor_-_Icon_-_Bullet-list-ltr.svg.png" alt="" style="height: 100px; width: auto; margin: 40px">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Generador manual</h5>
+              <p class="card-text">Los integrantes de los grupos se ingresan manualmente para luego ser agrupados.</p>
+              <div class="row justify-content-center" style="margin-top: 17px">
+                <a onclick="window.location.href='generador_manual.html';" class="btn btn-indigo" style="width: 100px">Entrar aqui</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
       
+      <div class="modal fade" tabindex="-1" id="subirArchivo">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Archivo subido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Su archivo fue cargado correctamente.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-indigo" data-bs-dismiss="modal" onclick="window.location.href='generador_1.html';">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
           <div class="col-sm-3">
             

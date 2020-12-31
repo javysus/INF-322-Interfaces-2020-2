@@ -15,7 +15,7 @@
     </style>
 
     <link rel="stylesheet" href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css">
-
+    <link rel="icon" href="logo.jpeg">
     
 
 </head>
@@ -48,7 +48,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="generador_home.html">Crear Grupos
+                <a class="nav-link" href="cursos.html">Mis cursos
                 </a>
               </li>
             </ul>
@@ -71,19 +71,19 @@
     </header>
   <main>
 
-     
-      <h1 class="d-inline" style="margin-top: 10px" id="nombreCurso">Curso 1</h1>
-      <a class="badge bg-light text-cyan" data-bs-toggle="modal" data-bs-target="#cambiarNombre" title="Editar nombre" href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+      <div class="row" style="text-align: center; margin-right: 0px">
+        <h1 class="d-inline" style="margin-top: 10px;" id="nombreCurso">Curso 1</h1>
+        <a class="badge bg-light text-cyan" data-bs-toggle="modal" data-bs-target="#cambiarNombre" title="Editar nombre" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right:5px;" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
         <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-      </svg>Editar nombre</a>
+        </svg>Editar nombre</a>
+      </div>
       <!--<button type="button" class="btn btn-indigo btn-sm ml-10 d-inline" onclick="window.location.href='generador_2.html';">Reordenar Todos</button>-->
 
     <div class="container">
       <div class="row"> 
         <div style="margin-top: 15px; margin-bottom: 15px;">
-        <span class="col-sm-3 d-inline">Quedan 31 días</span>
-        <button type="button" class="btn btn-indigo btn-sm ml-10" onclick="window.location.href='generador_2.html';">Reordenar Todos</button>
+        <span class="col-sm-3 d-inline">Proxima redistribución en 31 días</span>
         </div>
         <div class="progress" class="col-sm-9" style="height: 15px; margin-bottom: 15px;">
           <div class="progress-bar bg-success" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
@@ -92,12 +92,14 @@
       </div>  
     </div>
 
+    <button type="button" class="btn btn-indigo btn-sm ml-10" onclick="window.location.href='generador_2.html';" style="margin-left: 619px">Reordenar Todos</button>
+
     <ul class="nav nav-tabs justify-content-evenly" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="profile-tab" data-bs-toggle="tab" href="#normal" role="tab" aria-controls="profile" aria-selected="true">NORMAL</a>
+        <a class="nav-link active" id="profile-tab" data-bs-toggle="tab" href="#normal" role="tab" aria-controls="profile" aria-selected="true">AGRUPADOS</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#tabla" role="tab" aria-controls="home" aria-selected="false">LISTA</a>
+        <a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#tabla" role="tab" aria-controls="home" aria-selected="false">LISTA GENERAL</a>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
@@ -274,7 +276,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group " id="nombre1">Diego Briones</li>
                       <div class="d-flex justify-content-end">
-                      <small class="text-success mr-3">Avanzado</small>
+                      <small class="text-info mr-3">Avanzado</small>
                       <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar1" title="Intercambiar" href="#">
                       <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
@@ -287,7 +289,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group" id="nombre2">Victoria Cofré</li>
                       <div class="d-flex justify-content-end">
-                        <small class="text-yellow mr-3">Intermedio</small>
+                        <small class="text-success mr-3">Intermedio</small>
                         <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar2" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
@@ -300,7 +302,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group" id="nombre3">Josefa Soto</li>
                       <div class="d-flex justify-content-end">
-                        <small class="text-yellow mr-3">Intermedio</small>
+                        <small class="text-success mr-3">Intermedio</small>
                         <a class="badge bg-light text-dark"  data-bs-toggle="modal" data-bs-target="#intercambiar3" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
@@ -336,7 +338,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group" id="nombre5">José Rojas</li>
                       <div class="d-flex justify-content-end">
-                        <small class="text-success mr-3">Avanzado</small>
+                        <small class="text-info mr-3">Avanzado</small>
                         <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiar5" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
@@ -349,7 +351,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group" id="nombre6">Pedro Mérida</li>
                       <div class="d-flex justify-content-end">
-                        <small class="text-yellow mr-3">Intermedio</small>
+                        <small class="text-success mr-3">Intermedio</small>
                         <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
@@ -362,7 +364,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group" id="nombre7">Nicolás Castillo</li>
                       <div class="d-flex justify-content-end">
-                        <small class="text-yellow mr-3">Intermedio</small>
+                        <small class="text-success mr-3">Intermedio</small>
                         <a class="badge bg-light text-dark"  data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
@@ -398,7 +400,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group" id="nombre9">Rocío Fuentes</li>
                       <div class="d-flex justify-content-end">
-                        <small class="text-success mr-3">Avanzado</small>
+                        <small class="text-info mr-3">Avanzado</small>
                         <a class="badge bg-light text-dark" data-bs-toggle="modal" data-bs-target="#intercambiarfail" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
@@ -411,7 +413,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group" id="nombre10">Paula Aracena</li>
                       <div class="d-flex justify-content-end">
-                        <small class="text-yellow mr-3">Intermedio</small>
+                        <small class="text-success mr-3">Intermedio</small>
                         <a class="badge bg-light text-dark"  data-bs-toggle="modal" data-bs-target="#intercambiar10" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
@@ -424,7 +426,7 @@
                     <div class="d-flex w-100 justify-content-between">
                       <li class="list-group" id="nombre11">Laura Flores</li>
                       <div class="d-flex justify-content-end">
-                        <small class="text-yellow mr-3">Intermedio</small>
+                        <small class="text-success mr-3">Intermedio</small>
                         <a class="badge bg-light text-dark"  data-bs-toggle="modal" data-bs-target="#intercambiar11" title="Intercambiar" href="#">
                         <svg  xmlns="http://www.w3.org/2000/svg" datwidth="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
