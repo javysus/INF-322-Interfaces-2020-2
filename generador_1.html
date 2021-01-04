@@ -48,6 +48,14 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="generador_home.html">Generador Automático
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="generador_manual.html">Generador Manual
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="cursos.html">Mis cursos
                 </a>
               </li>
@@ -83,7 +91,7 @@
     <div class="container">
       <div class="row"> 
         <div style="margin-top: 15px; margin-bottom: 15px;">
-        <button type="button" class="btn btn-indigo btn-sm ml-10" onclick="window.location.href='generador_1_after.html';" style="margin-left: 500px">Reordenar Todos</button>
+        <button type="button" class="btn btn-indigo btn-sm ml-10" style="margin-left: 500px" data-bs-toggle="modal" data-bs-target="#hola">Reordenar Todos</button>
         </div>
       </div>  
     </div>
@@ -651,6 +659,24 @@
       </div>  
     </div>
 
+    <div class="modal fade" tabindex="-1" id="hola">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Advertencia</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>¿Está seguro/a que desea reordenar todos los alumnos?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-cyan" onclick="window.location.href='generador_1_after.html';" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
             <div class="modal fade" tabindex="-1" id="cambiarNombre">
@@ -673,6 +699,8 @@
                 </div>
               </div>
             </div>
+
+
         
 
     </main>
