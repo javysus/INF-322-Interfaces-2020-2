@@ -36,7 +36,7 @@
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home
+              <a class="nav-link active" href="index.html">Home
               </a>
             </li>
             <li class="nav-item">
@@ -74,9 +74,10 @@
       </div>
 
       <div class="row" style="margin-top: 30px; margin-right: 0px">
-        <h1 style="text-align: center; padding-right: 0px">Selecciona como generar los equipos</h1>
+        <h1 style="text-align: center; padding-right: 0px">Seleccione cómo generar los equipos</h1>
       </div>
-  
+      
+      <div class="d-flex flex-wrap flex-row justify-content-evenly">
       <div class="card-group">
         <div class="card mb-3" style="margin-left: 30px; margin-top: 50px; max-width: 635px; height: 200px">
           <div class="row g-0">
@@ -87,10 +88,11 @@
               <div class="card-body">
                 <h5 class="card-title">Generador automático</h5>
                 <p class="card-text">Los grupos se generan a partir de una lista de alumnos global (en formato CSV).</p>
-                <div class="input-group">
-                  <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                  <button class="btn btn-indigo" type="button" id="enviarArchivo" data-bs-toggle="modal" data-bs-target="#subirArchivo">Enviar</button>
-                </div>
+                <form class="input-group needs-validation" novalidate>
+                  <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                  <button class="btn btn-indigo" type="submit" id="enviarArchivo" >Enviar</button>
+                  <div class="invalid-feedback">Seleccione un archivo.</div>
+                </form>
               </div>
             </div>
           </div>
@@ -106,13 +108,14 @@
               <h5 class="card-title">Generador manual</h5>
               <p class="card-text">Los integrantes de los grupos se ingresan manualmente para luego ser agrupados.</p>
               <div class="row justify-content-center" style="margin-top: 17px">
-                <a onclick="window.location.href='generador_manual.html';" class="btn btn-indigo" style="width: 100px">Entrar aqui</a>
+                <a onclick="window.location.href='generador_manual.html';" class="btn btn-indigo" style="width: 100px">Entrar aquí</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       </div>
+    </div>
       
       <div class="modal fade" tabindex="-1" id="subirArchivo">
         <div class="modal-dialog">
@@ -165,5 +168,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
+        <script type="text/javascript" src = "./js/index.js"></script>
 </body>
 </html>

@@ -52,10 +52,16 @@ $(document).ready(function(){
             
                     document.getElementById("nombre").value = "";
                     document.getElementById("apellido").value = "";
-                    /*var validator = $( "#addForm" ).validate();
-                    validator.resetForm();*/
                     document.getElementById('addForm').classList.remove("was-validated");
                   
+              }
+
+              if(form.checkValidity() && form.id == "generar"){
+                event.preventDefault()
+                var myModal = new bootstrap.Modal(document.getElementById('advertencia'), {
+                  keyboard: false
+                })
+                myModal.toggle()
               }
               
             }, false)

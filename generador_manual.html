@@ -56,7 +56,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="generador_manual.html">Generador Manual
+              <a class="nav-link active" href="generador_manual.html">Generador Manual
               </a>
             </li>
             <li class="nav-item">
@@ -85,6 +85,7 @@
   <main>
       <h1>Lista de alumnos</h1>
 
+      <div class="container-fluid">
       <form class="row g-2 needs-validation" id="addForm" novalidate>
         <div class="col-md">
           <div class="form-floating">
@@ -121,7 +122,7 @@
             <div class="form-floating">
               <select class="form-select" id="nivel" aria-label="Floating label select example">
                 <option value="Principiante">Principiante</option>
-                <option value="Medio">Medio</option>
+                <option value="Intermedio">Intermedio</option>
                 <option value="Avanzado">Avanzado</option>
               </select>
               <label for="floatingSelectGrid">Conocimiento</label>
@@ -131,11 +132,11 @@
           <div class="col-auto">
             <button type="submit" id="add" class="btn btn-indigo mt-2">+ Agregar</button>
           </div>
-        </form>
+      </form></div>
         
-      <form class="needs-validation" novalidate>
+      <form class="needs-validation" id="generar" novalidate>
       <div class="d-flex flex-row mt-2">
-        <p style="margin-right: 10px;">Integrantes por grupo:</p>
+        <p style="margin-right: 10px; margin-left: 15px;">Integrantes por grupo:</p>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
           <label class="form-check-label" for="inlineRadio1">3</label>
@@ -166,6 +167,24 @@
         <tbody id="tableBody">
         </tbody>
       </table>
+
+      <div class="modal fade" tabindex="-1" id="advertencia">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Advertencia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Con los alumnos actuales no es posible formar grupos con una distribución equitativa en conocimiento y/o género. ¿Desea continuar?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-cyan" onclick="window.location.href='generador_2.html';" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </main>
     <footer>
