@@ -50,7 +50,7 @@ $(document).ready(function(){
         document.getElementById("apellido"+alum).innerHTML = apellidoOriginal;
 
         $("footer").append('<div class="alert alert-success alert-dismissible fade show" role="alert">El intercambio se ha realizado satisfactoriamente.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
-        $(".alert").delay(3000).fadeOut(200, function() {
+        $(".alert").delay(7000).fadeOut(200, function() {
             $(this).alert('close');
         });
     })
